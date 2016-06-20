@@ -1,2 +1,4 @@
-# Qlikview_Vim_Syntax
+# Qlikview Vim Syntax
+
 Vim syntax highlighting for Qlikview
+
