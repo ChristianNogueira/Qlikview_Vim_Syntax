@@ -13,7 +13,7 @@ endif
 
 syn case ignore
 
-syn keyword qvsStatement LOAD FROM FOR IF END ELSE STORE DROP NEXT SUB FIRST TO TABLE THEN
+syn keyword qvsStatement CALL RESIDENT NOCONCATENATE MAPPING WHERE LOAD FROM FOR IF END ELSE STORE DROP NEXT SUB FIRST TO TABLE THEN AND ORDER BY
 syn keyword qvsKeyItems SET LET EXIT
 
 syn keyword qvsAggregateFunction sum min max only mode firstsortedvalue
@@ -26,7 +26,7 @@ syn keyword qvsAggregateFunction TTestw_sterr TTestw_conf TTestw_lower TTestw_up
 syn keyword qvsAggregateFunction TTest1w_sig TTest1w_dif TTest1w_sterr TTest1w_conf TTest1w_lower TTest1w_upper ZTest_z ZTest_sig ZTest_dif ZTest_sterr ZTest_conf ZTestw_z ZTestw_sig ZTestw_dif
 syn keyword qvsAggregateFunction ZTestw_sterr ZTestw_conf
 
-syn keyword qvsGeneralFunction	div mod fmod ceil floor frac round fabs numsum numcount numavg nummin nummax fact combin permut even odd sign bitcount 
+syn keyword qvsGeneralFunction	div mod fmod ceil floor frac round fabs numsum numcount numavg nummin nummax fact combin permut even odd sign bitcount concatenate
 
 syn keyword qvsScriptRangeFunction rangesum rangeavg rangecount rangemin rangemax rangestdev rangeskew rangekurtosis rangefractile rangenumericcount rangetextcount rangenullcount rangemissingcount
 syn keyword qvsScriptRangeFunction rangeminstring rangeminstring rangemode rangeonly rangecorrel rangeirr rangenpv rangexirr rangexnpv
