@@ -86,6 +86,10 @@ syn match qvsNumber 		'[-+]\d\+' contained display
 syn match qvsNumber		'\d\+\.\d*' contained display
 syn match qvsNumber		'[-+]\d\+\.\d*' contained display
 
+" Inline tables
+" Handles only the "standard" use of [] as
+syn region qvsInlineTable   start="\[" end="\]"
+
 " Comments
 syn region qvsTableName		start=/^[a-zA-Z_\-1-9]/ end=/:/
 syn region qvsComment		start=/\/\// end=/$/ 
