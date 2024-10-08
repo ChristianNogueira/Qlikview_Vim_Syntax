@@ -13,7 +13,7 @@ endif
 
 syn case ignore
 
-syn keyword qvsStatement CALL RESIDENT NOCONCATENATE MAPPING WHERE LOAD FROM FOR IF END ELSE STORE DROP NEXT SUB FIRST TO TABLE THEN AND ORDER BY
+syn keyword qvsStatement CALL RESIDENT NOCONCATENATE MAPPING WHERE LOAD FROM FOR IF END ELSE STORE DROP NEXT SUB FIRST TO TABLE THEN AND ORDER BY GROUP
 syn keyword qvsKeyItems SET LET EXIT
 
 syn keyword qvsAggregateFunction sum min max only mode firstsortedvalue
