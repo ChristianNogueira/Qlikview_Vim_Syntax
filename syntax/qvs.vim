@@ -1,9 +1,9 @@
 " Vim syntax file
 " Language:    Qlikview
 " Maintainer:  Christian Stickel Nogueira
-" Last Change: 2016, jun
-" Version:     1.0.0
-" Description: inicial release
+" Last Change: 2025, Sep
+" Version:     1.0.1
+" Description: updated release
 "
 if version < 600
     syntax clear
@@ -13,8 +13,10 @@ endif
 
 syn case ignore
 
-syn keyword qvsStatement CALL RESIDENT NOCONCATENATE MAPPING WHERE LOAD FROM FOR IF END ELSE STORE DROP NEXT SUB FIRST TO TABLE THEN AND ORDER BY GROUP RENAME FIELD INLINE DISTINCT AUTOGENERATE WHILE AS
+syn keyword qvsStatement CALL RESIDENT NOCONCATENATE MAPPING WHERE LOAD FROM FOR IF END ELSE STORE DROP NEXT SUB FIRST TO TABLE THEN AND ORDER BY GROUP RENAME FIELD INLINE DISTINCT AUTOGENERATE WHILE AS SQL
 syn keyword qvsKeyItems SET LET EXIT TRACE
+
+syn keyword qvsSqlStatement select where and or execute
 
 syn keyword qvsAggregateFunction sum min max only mode firstsortedvalue
 syn keyword qvsAggregateFunction MinString MaxString FirstValue LastValue concat
@@ -103,6 +105,7 @@ hi def link qvsString	        String
 
 hi def link qvsKeyItems	        Keyword
 hi def link qvsStatement	Statement
+hi def link qvsSqlStatement	Statement
 hi def link qvsMathConstants	Statement
 hi def link qvsSystemVariables	Statement
 hi def link qvsVariable		Include
